@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+.heading-primary {
+    font-family: 'Cutive', serif;
+    text-align: center;
+}
+
+.new-doc-card {
+    width: 80%;
+    height: 230px;
+    background: #fff;
+    margin: auto;
+    border-radius: 20px;
+    border: 3px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.add-btn {
+    color: #D9262F;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.add-new-doc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.heading-secondary {
+    font-family: 'Cutive', serif;
+}
+
+.add-new-doc-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.doc-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Cutive', serif;
+}
+
+.doc-title-input {
+    width: 30%;
+    height: 30px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #848484;
+    font-family: 'Cutive', serif;
+    margin-bottom: 10px;
+}
+
+.doc-title-input:focus {
+    border-color: #333;
+    border-width: 2px;
+}
+
+.add-new-doc-btn {
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background-color: #6B645C;
+    font-family: 'Cutive', serif;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+.add-new-doc-btn:hover {
+    border-width: 2px;
+    border-color: #000;
+}
+
+.add-new-doc-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
+
+.docs-card {
+    margin: auto;
+    width: 80%;
+    background: #fff;
+    border-radius: 20px;
+    border: 3px solid #000;
+    padding: 10px;
+    height: fit-content;
+}
+
+.saved-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: olive;
+}
+
+.saved-docs-div {
+    display: flex;
+    align-items: center;
+}
+
+.single-doc {
+    padding: 0 40px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-doc-icon {
+    cursor: pointer;
+}
+
+.delete-doc-icon:hover {
+    color: #D9262F;
+}
+
+.doc-name {
+    cursor: pointer;
+}
+
+.doc-name:hover {
+    color: #6B645C;
+}
+
+.name-div {
+    width: 40%;
+}
+
+.manage-btn:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.user-role--div {
+    background-color: #7E8C8D;
+    color: #eee;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Cutive, serif;
+    font-size: 0.8rem;
+}
+
+.buttons--div {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dashboard-container {
+    margin-top: 80px;
+}
+
+/* .error-box {
+    background: #f4dede;
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    color: #820918;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.error-text {
+    margin-left: 5%;
+    text-transform: capitalize;
+} */
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.progress {
+    position: absolute;
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    margin: 0 .5em;
+    font-size: 12px;
+    text-indent: 999em;
+    overflow: hidden;
+    animation: spin 1s infinite steps(8);
+    left: 50%;
+    top: 50%;
+}
+
+.small.progress {
+    font-size: 6px;
+}
+
+.medium.progress {
+    font-size: 12px;
+}
+
+.large.progress {
+    font-size: 24px;
+}
+
+.progress:before, .progress:after, .progress>div:before, .progress>div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2.25em;
+    /* (container width - part width)/2  */
+    width: .5em;
+    height: 1.5em;
+    border-radius: .2em;
+    background: #eee;
+    box-shadow: 0 3.5em #eee;
+    /* container height - part height */
+    transform-origin: 50% 2.5em;
+    /* container height / 2 */
+}
+
+.progress:before {
+    background: #555;
+}
+
+.progress:after {
+    transform: rotate(-45deg);
+    background: #777;
+}
+
+.progress>div:before {
+    transform: rotate(-90deg);
+    background: #999;
+}
+
+.progress>div:after {
+    transform: rotate(-135deg);
+    background: #bbb;
+}
